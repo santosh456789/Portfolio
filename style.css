@@ -1,90 +1,167 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Santosh Parmmar | Embedded Middleware Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.hero {
-  background: #0f172a;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
+  <!-- SEO / ATS -->
+  <meta name="description"
+        content="Embedded Middleware Developer with expertise in C, C++, Embedded Linux, GSM, GNSS, CAN, MQTT, AWS IoT, Qt, Electron">
 
-.section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
 
-h2 {
-  color: #0f172a;
-  margin-bottom: 20px;
-}
+<body>
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-}
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="hero-card">
+    <img src="assets/image.png" alt="Santosh Parmmar" class="profile-pic">
 
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-}
+    <h1>Santosh Parmmar</h1>
+    <h2>Embedded Middleware / Application Developer</h2>
 
-.tabs input {
-  display: none;
-}
+    <p class="hero-intro">
+      I build reliable <strong>C/C++ middleware applications</strong> on
+      <strong>Embedded Linux</strong> that collect, process, and transmit
+      real-world hardware data such as <strong>GSM, GNSS, CAN, sensors,
+      power, motion, and temperature</strong>.
+      <br><br>
+      Experienced in <strong>IoT systems</strong>, <strong>MQTT + AWS IoT</strong>,
+      <strong>OTA updates</strong>, <strong>IPC & shared memory</strong>, and
+      field-deployed device stability.
+    </p>
 
-.tabs label {
-  padding: 10px 20px;
-  background: #e5e7eb;
-  margin-right: 5px;
-  cursor: pointer;
-  border-radius: 5px 5px 0 0;
-}
+    <div class="hero-actions">
+      <a href="assets/resume.pdf" target="_blank" class="btn primary">Download Resume</a>
+      <a href="mailto:santosh.parmar@gmail.com" class="btn">Gmail</a>
+      <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://github.com/yourusername" target="_blank" class="btn">GitHub</a>
+    </div>
+  </div>
+</header>
 
-.tabs input:checked + label {
-  background: #0f172a;
-  color: white;
-}
+<!-- SKILLS -->
+<section class="section">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <span>C</span><span>C++</span><span>Embedded Linux</span><span>POSIX</span>
+    <span>GSM</span><span>GNSS / GPS</span><span>CAN</span><span>IIO</span>
+    <span>MQTT</span><span>PPP</span><span>AWS IoT</span><span>JSON-C</span>
+    <span>Qt</span><span>Electron</span><span>JavaScript</span><span>Python</span>
+    <span>Shell</span><span>Git</span><span>Jira</span><span>Confluence</span>
+  </div>
+</section>
 
-.tab-content {
-  width: 100%;
-  display: none;
-  background: white;
-  padding: 20px;
-  border-radius: 0 5px 5px 5px;
-}
+<!-- PROJECTS -->
+<section class="section">
+  <h2>Projects</h2>
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5 {
-  display: block;
-}
+  <div class="tabs">
+    <input type="radio" name="tabs" id="p1" checked>
+    <label for="p1">IoT Middleware</label>
 
-.timeline-item {
-  background: white;
-  padding: 15px;
-  border-left: 4px solid #0f172a;
-}
+    <input type="radio" name="tabs" id="p2">
+    <label for="p2">TPMS & IPC</label>
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #0f172a;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
+    <input type="radio" name="tabs" id="p3">
+    <label for="p3">Remote Update</label>
 
-footer {
-  text-align: center;
-  background: #0f172a;
-  color: white;
-  padding: 15px;
-}
+    <input type="radio" name="tabs" id="p4">
+    <label for="p4">Qt & Electron</label>
+
+    <input type="radio" name="tabs" id="p5">
+    <label for="p5">Bare Metal</label>
+
+    <div class="tab-content" id="c1">
+      <h3>Embedded IoT Middleware Platform</h3>
+      <ul>
+        <li>Developed C/C++ middleware on Embedded Linux</li>
+        <li>Collected GSM data using glib & libmm-glib via PPP</li>
+        <li>GNSS data via gps.h and gpspipe</li>
+        <li>Integrated power, HW/FW, motion, temperature, CAN & IIO data</li>
+        <li>Structured data using json-c</li>
+        <li>Published data to AWS IoT using MQTT</li>
+        <li>Implemented local logging for field diagnostics</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="c2">
+      <h3>TPMS Sensor & Shared Memory System</h3>
+      <ul>
+        <li>Decoded and validated raw TPMS sensor data</li>
+        <li>Prepared JSON payloads</li>
+        <li>Stored data in shared memory</li>
+        <li>Used mutex for thread-safe parallel access</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="c3">
+      <h3>Remote Command & OTA Update System</h3>
+      <ul>
+        <li>MQTT-based remote communication</li>
+        <li>IMEI-based topic subscription</li>
+        <li>Remote command execution</li>
+        <li>OS & application OTA updates</li>
+        <li>Fail-safe rollback to previous image</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="c4">
+      <h3>Qt & Electron Visualization Tools</h3>
+      <ul>
+        <li>Qt C++ UI for GSM & GNSS data visualization</li>
+        <li>Electron-based dashboard</li>
+        <li>Tab-based monitoring interface</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="c5">
+      <h3>Bare Metal Firmware Development</h3>
+      <ul>
+        <li>Customer-driven firmware development</li>
+        <li>Dual operator / dual profile support</li>
+        <li>Automatic & forced network switching</li>
+        <li>GEO-fencing with entry & exit alerts</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section timeline">
+  <h2>Education</h2>
+
+  <div class="timeline-item">
+    <h4>Bachelor of Engineering (B.E)</h4>
+    <p>Electrical & Electronics Engineering<br>
+       HKBK College of Engineering, Bengaluru</p>
+  </div>
+
+  <div class="timeline-item">
+    <h4>Embedded Systems Training</h4>
+    <p>Vector India – C, C++, Embedded Linux, System Programming</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact">
+  <h2>Contact</h2>
+  <p>
+    Interested in Embedded Linux, Middleware, IoT, and Automotive opportunities.
+  </p>
+
+  <div class="contact-links">
+    <a href="mailto:santosh.parmar@gmail.com">📧 santosh.parmar@gmail.com</a>
+    <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank">🔗 LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank">🐙 GitHub</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Santosh Parmmar • Embedded Middleware Developer
+</footer>
+
+</body>
+</html>
