@@ -1,74 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Santosh Parmar | Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Santosh Parmar | Embedded Middleware Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Embedded Middleware Developer skilled in C/C++, Embedded Linux, MQTT, AWS, GSM, GNSS, CAN, Qt, Electron">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="hero">
   <h1>Santosh Parmar</h1>
-  <p>C / C++ | Embedded Linux | Qt | AWS | CI/CD</p>
-  <a href="#contact" class="btn">Contact Me</a>
+  <p>Embedded Middleware / Application Developer</p>
+  <span>C • C++ • Embedded Linux • IoT • AWS • MQTT</span>
 </header>
 
-<section class="about">
-  <h2>About Me</h2>
+<section class="section">
+  <h2>Professional Summary</h2>
   <p>
-    Embedded software engineer with 3+ years of experience in C/C++, 
-    Linux systems, IoT devices, AWS integration, and CI/CD pipelines.
-    Passionate about building reliable systems and performance-critical software.
+    Embedded Middleware Developer with 3+ years of experience in designing and developing
+    C/C++ applications on Embedded Linux platforms. Expertise in hardware data acquisition,
+    middleware abstraction, inter-process communication, cloud connectivity, and
+    field-deployed IoT systems.
   </p>
 </section>
 
-<section class="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>C / C++</li>
-    <li>Embedded Linux</li>
-    <li>Qt / UI Development</li>
-    <li>AWS (Lambda, S3, IoT)</li>
-    <li>CI/CD (GitLab)</li>
-    <li>MQTT, CAN, GNSS</li>
-  </ul>
+<section class="section">
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div><strong>Languages</strong><br>C, C++, Python, Shell, JavaScript</div>
+    <div><strong>OS</strong><br>Embedded Linux, POSIX, IPC</div>
+    <div><strong>Protocols</strong><br>MQTT, TCP/IP, CAN, PPP</div>
+    <div><strong>Cloud</strong><br>AWS IoT, S3, Lambda</div>
+    <div><strong>UI</strong><br>Qt (C++), Electron</div>
+    <div><strong>Tools</strong><br>Git, Jira, Confluence, GDB</div>
+  </div>
 </section>
 
-<section class="projects">
+<section class="section">
   <h2>Projects</h2>
 
-  <div class="card">
-    <h3>Electrace – IoT Device Monitoring</h3>
-    <p>
-      Designed and developed an application that collects GSM, GNSS,
-      power, CAN, and sensor data and uploads it to AWS securely.
-    </p>
-  </div>
+  <div class="tabs">
+    <input type="radio" name="tab" id="tab1" checked>
+    <label for="tab1">IoT Middleware</label>
 
-  <div class="card">
-    <h3>SKY3 Board Debug & Stability</h3>
-    <p>
-      Analyzed memory leaks, boot failures, watchdog resets, and
-      cluster switching on i.MX-based embedded platforms.
-    </p>
+    <input type="radio" name="tab" id="tab2">
+    <label for="tab2">TPMS & IPC</label>
+
+    <input type="radio" name="tab" id="tab3">
+    <label for="tab3">Remote Update</label>
+
+    <input type="radio" name="tab" id="tab4">
+    <label for="tab4">Qt & Electron</label>
+
+    <input type="radio" name="tab" id="tab5">
+    <label for="tab5">Bare Metal</label>
+
+    <div class="tab-content" id="content1">
+      <h3>Embedded IoT Middleware Platform</h3>
+      <ul>
+        <li>Developed C/C++ middleware on Embedded Linux</li>
+        <li>Collected GSM data using glib & libmm-glib via PPP</li>
+        <li>GNSS data via gps.h and gpspipe</li>
+        <li>Power, HW/FW, motion, temperature, CAN, IIO sensors</li>
+        <li>JSON creation using json-c</li>
+        <li>MQTT communication with AWS IoT</li>
+        <li>Local logging for post-failure analysis</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="content2">
+      <h3>TPMS Data Processing & Shared Memory</h3>
+      <ul>
+        <li>Raw TPMS data decoding and validation</li>
+        <li>JSON preparation and storage in shared memory</li>
+        <li>Multi-process access with mutex protection</li>
+        <li>Thread-safe IPC design</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="content3">
+      <h3>Remote Command & OTA Update System</h3>
+      <ul>
+        <li>MQTT-based remote communication</li>
+        <li>IMEI-based topic subscription</li>
+        <li>Remote command execution</li>
+        <li>OS & Application OTA updates</li>
+        <li>Fail-safe rollback to previous image</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="content4">
+      <h3>Qt & Electron Visualization Tools</h3>
+      <ul>
+        <li>Qt-based C++ UI for GSM & GNSS visualization</li>
+        <li>Electron dashboard with tab-based views</li>
+        <li>Real-time data monitoring</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="content5">
+      <h3>Bare Metal Device Development</h3>
+      <ul>
+        <li>Customer-driven firmware development</li>
+        <li>Dual profile / dual operator support</li>
+        <li>Automatic & forced network switching</li>
+        <li>GEO-fencing with entry/exit alerts</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
-<section class="resume">
+<section class="section timeline">
+  <h2>Education & Training</h2>
+  <div class="timeline-item">
+    <span>Vector India</span>
+    <p>Advanced Embedded Systems Training – C, C++, Embedded Linux</p>
+  </div>
+</section>
+
+<section class="section">
   <h2>Resume</h2>
-  <a href="assets/resume.pdf" target="_blank" class="btn">Download Resume</a>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <p>Email: santosh@example.com</p>
-  <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
+  <a class="btn" href="assets/resume.pdf" target="_blank">Download Resume</a>
 </section>
 
 <footer>
-  <p>© 2026 Santosh Parmar</p>
+  <p>© 2026 Santosh Parmar | Embedded Middleware Developer</p>
 </footer>
 
 </body>
