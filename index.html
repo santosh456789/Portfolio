@@ -2,35 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Santosh Parmmar | Embedded Middleware Developer</title>
+  <title>Santosh Parmar | Embedded Middleware Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO / ATS -->
   <meta name="description"
-        content="Embedded Middleware Developer with expertise in C, C++, Embedded Linux, GSM, GNSS, CAN, MQTT, AWS IoT, Qt, Electron">
+        content="Embedded Middleware Developer | C C++ Embedded Linux | GSM GNSS CAN MQTT AWS IoT OTA Qt Electron Automotive">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
+<!-- DARK / LIGHT TOGGLE -->
+<input type="checkbox" id="theme-toggle" hidden>
+<label for="theme-toggle" class="theme-switch">🌙 / ☀️</label>
+
+<!-- HERO -->
 <header class="hero">
   <div class="hero-card">
-    <img src="assets/image.png" alt="Santosh Parmmar" class="profile-pic">
+    <img src="assets/image.png" alt="Santosh Parmar" class="profile-pic">
 
-    <h1>Santosh Parmmar</h1>
+    <h1>Santosh Parmar</h1>
     <h2>Embedded Middleware / Application Developer</h2>
 
     <p class="hero-intro">
-      I build reliable <strong>C/C++ middleware applications</strong> on
-      <strong>Embedded Linux</strong> that collect, process, and transmit
-      real-world hardware data such as <strong>GSM, GNSS, CAN, sensors,
-      power, motion, and temperature</strong>.
+      Embedded Middleware Developer with <strong>3+ years of experience</strong>
+      building <strong>C/C++ applications</strong> on <strong>Embedded Linux</strong>.
+      I specialize in collecting, processing, and transmitting real-world
+      hardware data such as <strong>GSM, GNSS, CAN, TPMS, motion sensors,
+      temperature, power, and IIO devices</strong>.
       <br><br>
-      Experienced in <strong>IoT systems</strong>, <strong>MQTT + AWS IoT</strong>,
-      <strong>OTA updates</strong>, <strong>IPC & shared memory</strong>, and
-      field-deployed device stability.
+      Experienced in <strong>MQTT + AWS IoT</strong>, <strong>OTA updates</strong>,
+      <strong>shared memory & IPC</strong>, and ensuring reliability of
+      <strong>field-deployed automotive and IoT devices</strong>.
     </p>
 
     <div class="hero-actions">
@@ -47,10 +52,12 @@
   <h2>Technical Skills</h2>
   <div class="skills-grid">
     <span>C</span><span>C++</span><span>Embedded Linux</span><span>POSIX</span>
-    <span>GSM</span><span>GNSS / GPS</span><span>CAN</span><span>IIO</span>
-    <span>MQTT</span><span>PPP</span><span>AWS IoT</span><span>JSON-C</span>
-    <span>Qt</span><span>Electron</span><span>JavaScript</span><span>Python</span>
-    <span>Shell</span><span>Git</span><span>Jira</span><span>Confluence</span>
+    <span>GSM</span><span>GNSS / GPS</span><span>CAN</span><span>TPMS</span>
+    <span>IIO</span><span>MQTT</span><span>PPP</span><span>AWS IoT</span>
+    <span>JSON-C</span><span>Shared Memory</span><span>Mutex</span>
+    <span>Qt</span><span>Electron</span><span>JavaScript</span>
+    <span>Python</span><span>Shell</span>
+    <span>Git</span><span>Jira</span><span>Confluence</span>
   </div>
 </section>
 
@@ -77,23 +84,23 @@
     <div class="tab-content" id="c1">
       <h3>Embedded IoT Middleware Platform</h3>
       <ul>
-        <li>Developed C/C++ middleware on Embedded Linux</li>
-        <li>Collected GSM data using glib & libmm-glib via PPP</li>
-        <li>GNSS data via gps.h and gpspipe</li>
-        <li>Integrated power, HW/FW, motion, temperature, CAN & IIO data</li>
-        <li>Structured data using json-c</li>
-        <li>Published data to AWS IoT using MQTT</li>
-        <li>Implemented local logging for field diagnostics</li>
+        <li>C/C++ middleware on Embedded Linux</li>
+        <li>GSM data via glib & libmm-glib using PPP</li>
+        <li>GNSS via gps.h and gpspipe</li>
+        <li>Power, HW/FW, motion, temperature, CAN, IIO sensors</li>
+        <li>JSON creation using json-c</li>
+        <li>MQTT communication with AWS IoT</li>
+        <li>Local logging for post-failure analysis</li>
       </ul>
     </div>
 
     <div class="tab-content" id="c2">
-      <h3>TPMS Sensor & Shared Memory System</h3>
+      <h3>TPMS Sensor Processing & Shared Memory</h3>
       <ul>
-        <li>Decoded and validated raw TPMS sensor data</li>
-        <li>Prepared JSON payloads</li>
-        <li>Stored data in shared memory</li>
-        <li>Used mutex for thread-safe parallel access</li>
+        <li>Raw TPMS data decoding</li>
+        <li>JSON preparation</li>
+        <li>Shared memory storage</li>
+        <li>Mutex-protected parallel access</li>
       </ul>
     </div>
 
@@ -104,28 +111,59 @@
         <li>IMEI-based topic subscription</li>
         <li>Remote command execution</li>
         <li>OS & application OTA updates</li>
-        <li>Fail-safe rollback to previous image</li>
+        <li>Rollback to previous image on failure</li>
       </ul>
     </div>
 
     <div class="tab-content" id="c4">
       <h3>Qt & Electron Visualization Tools</h3>
       <ul>
-        <li>Qt C++ UI for GSM & GNSS data visualization</li>
-        <li>Electron-based dashboard</li>
-        <li>Tab-based monitoring interface</li>
+        <li>Qt C++ UI for GSM & GNSS data</li>
+        <li>Electron-based monitoring dashboard</li>
+        <li>Tab-based visualization</li>
       </ul>
     </div>
 
     <div class="tab-content" id="c5">
-      <h3>Bare Metal Firmware Development</h3>
+      <h3>Bare Metal Device Development</h3>
       <ul>
         <li>Customer-driven firmware development</li>
-        <li>Dual operator / dual profile support</li>
-        <li>Automatic & forced network switching</li>
-        <li>GEO-fencing with entry & exit alerts</li>
+        <li>Dual operator / dual profile switching</li>
+        <li>Automatic network selection</li>
+        <li>GEO-fencing with alerts</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="section">
+  <h2>System Architecture</h2>
+  <div class="architecture">
+    <ul>
+      <li>Hardware Layer: GSM, GNSS, CAN, TPMS, Sensors</li>
+      <li>Middleware Layer: C/C++ Data Collection & IPC</li>
+      <li>OS Layer: Embedded Linux, POSIX</li>
+      <li>Communication: PPP, MQTT</li>
+      <li>Cloud: AWS IoT, OTA, Remote Commands</li>
+      <li>UI: Qt & Electron</li>
+    </ul>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section timeline">
+  <h2>Professional Experience</h2>
+  <div class="timeline-item">
+    <h4>Embedded Middleware Developer</h4>
+    <p><strong>Automotive / IoT Domain</strong></p>
+    <ul>
+      <li>Embedded Linux middleware development in C/C++</li>
+      <li>GSM, GNSS, CAN, TPMS, sensor integration</li>
+      <li>AWS IoT & MQTT communication</li>
+      <li>OTA updates with fail-safe rollback</li>
+      <li>Field debugging using logs & GDB</li>
+    </ul>
   </div>
 </section>
 
@@ -141,16 +179,14 @@
 
   <div class="timeline-item">
     <h4>Embedded Systems Training</h4>
-    <p>Vector India – C, C++, Embedded Linux, System Programming</p>
+    <p>Vector India – C, C++, Embedded Linux</p>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section contact">
   <h2>Contact</h2>
-  <p>
-    Interested in Embedded Linux, Middleware, IoT, and Automotive opportunities.
-  </p>
+  <p>Open to Embedded Linux, Automotive, and IoT opportunities.</p>
 
   <div class="contact-links">
     <a href="mailto:santosh.parmar@gmail.com">📧 santosh.parmar@gmail.com</a>
@@ -160,7 +196,7 @@
 </section>
 
 <footer>
-  © 2026 Santosh Parmmar • Embedded Middleware Developer
+  © 2026 Santosh Parmar • Embedded Middleware Developer
 </footer>
 
 </body>
