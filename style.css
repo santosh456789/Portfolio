@@ -1,82 +1,90 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-
 body {
-  background: #f5f7fa;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
   color: #333;
-  line-height: 1.6;
 }
 
 .hero {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: #0f172a;
   color: white;
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-.hero p {
-  margin: 15px 0;
-  font-size: 1.2rem;
+h2 {
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs input {
+  display: none;
+}
+
+.tabs label {
+  padding: 10px 20px;
+  background: #e5e7eb;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.tabs input:checked + label {
+  background: #0f172a;
+  color: white;
+}
+
+.tab-content {
+  width: 100%;
+  display: none;
+  background: white;
+  padding: 20px;
+  border-radius: 0 5px 5px 5px;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+}
+
+.timeline-item {
+  background: white;
+  padding: 15px;
+  border-left: 4px solid #0f172a;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #ff9800;
+  background: #0f172a;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 15px;
-}
-
-section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  margin-bottom: 20px;
-  color: #1e3c72;
-}
-
-.skills ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  list-style: none;
-  gap: 10px;
-}
-
-.skills li {
-  background: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-}
-
-.contact a {
-  color: #1e3c72;
-  text-decoration: none;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
-  background: #1e3c72;
+  background: #0f172a;
   color: white;
+  padding: 15px;
 }
