@@ -2,132 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Santosh Parmar | Embedded Middleware Developer</title>
+  <title>Santosh Parmmar | Embedded Middleware Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Embedded Middleware Developer skilled in C/C++, Embedded Linux, MQTT, AWS, GSM, GNSS, CAN, Qt, Electron">
+
+  <!-- SEO / ATS -->
+  <meta name="description"
+        content="Embedded Middleware Developer with expertise in C, C++, Embedded Linux, GSM, GNSS, CAN, MQTT, AWS IoT, Qt, Electron">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- HERO SECTION -->
 <header class="hero">
-  <h1>Santosh Parmar</h1>
-  <p>Embedded Middleware / Application Developer</p>
-  <span>C • C++ • Embedded Linux • IoT • AWS • MQTT</span>
+  <div class="hero-card">
+    <img src="assets/image.png" alt="Santosh Parmmar" class="profile-pic">
+
+    <h1>Santosh Parmmar</h1>
+    <h2>Embedded Middleware / Application Developer</h2>
+
+    <p class="hero-intro">
+      I build reliable <strong>C/C++ middleware applications</strong> on
+      <strong>Embedded Linux</strong> that collect, process, and transmit
+      real-world hardware data such as <strong>GSM, GNSS, CAN, sensors,
+      power, motion, and temperature</strong>.
+      <br><br>
+      Experienced in <strong>IoT systems</strong>, <strong>MQTT + AWS IoT</strong>,
+      <strong>OTA updates</strong>, <strong>IPC & shared memory</strong>, and
+      field-deployed device stability.
+    </p>
+
+    <div class="hero-actions">
+      <a href="assets/resume.pdf" target="_blank" class="btn primary">Download Resume</a>
+      <a href="mailto:santosh.parmar@gmail.com" class="btn">Gmail</a>
+      <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://github.com/yourusername" target="_blank" class="btn">GitHub</a>
+    </div>
+  </div>
 </header>
 
-<section class="section">
-  <h2>Professional Summary</h2>
-  <p>
-    Embedded Middleware Developer with 3+ years of experience in designing and developing
-    C/C++ applications on Embedded Linux platforms. Expertise in hardware data acquisition,
-    middleware abstraction, inter-process communication, cloud connectivity, and
-    field-deployed IoT systems.
-  </p>
-</section>
-
+<!-- SKILLS -->
 <section class="section">
   <h2>Technical Skills</h2>
-  <div class="grid">
-    <div><strong>Languages</strong><br>C, C++, Python, Shell, JavaScript</div>
-    <div><strong>OS</strong><br>Embedded Linux, POSIX, IPC</div>
-    <div><strong>Protocols</strong><br>MQTT, TCP/IP, CAN, PPP</div>
-    <div><strong>Cloud</strong><br>AWS IoT, S3, Lambda</div>
-    <div><strong>UI</strong><br>Qt (C++), Electron</div>
-    <div><strong>Tools</strong><br>Git, Jira, Confluence, GDB</div>
+  <div class="skills-grid">
+    <span>C</span><span>C++</span><span>Embedded Linux</span><span>POSIX</span>
+    <span>GSM</span><span>GNSS / GPS</span><span>CAN</span><span>IIO</span>
+    <span>MQTT</span><span>PPP</span><span>AWS IoT</span><span>JSON-C</span>
+    <span>Qt</span><span>Electron</span><span>JavaScript</span><span>Python</span>
+    <span>Shell</span><span>Git</span><span>Jira</span><span>Confluence</span>
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section class="section">
   <h2>Projects</h2>
 
   <div class="tabs">
-    <input type="radio" name="tab" id="tab1" checked>
-    <label for="tab1">IoT Middleware</label>
+    <input type="radio" name="tabs" id="p1" checked>
+    <label for="p1">IoT Middleware</label>
 
-    <input type="radio" name="tab" id="tab2">
-    <label for="tab2">TPMS & IPC</label>
+    <input type="radio" name="tabs" id="p2">
+    <label for="p2">TPMS & IPC</label>
 
-    <input type="radio" name="tab" id="tab3">
-    <label for="tab3">Remote Update</label>
+    <input type="radio" name="tabs" id="p3">
+    <label for="p3">Remote Update</label>
 
-    <input type="radio" name="tab" id="tab4">
-    <label for="tab4">Qt & Electron</label>
+    <input type="radio" name="tabs" id="p4">
+    <label for="p4">Qt & Electron</label>
 
-    <input type="radio" name="tab" id="tab5">
-    <label for="tab5">Bare Metal</label>
+    <input type="radio" name="tabs" id="p5">
+    <label for="p5">Bare Metal</label>
 
-    <div class="tab-content" id="content1">
+    <div class="tab-content" id="c1">
       <h3>Embedded IoT Middleware Platform</h3>
       <ul>
         <li>Developed C/C++ middleware on Embedded Linux</li>
         <li>Collected GSM data using glib & libmm-glib via PPP</li>
         <li>GNSS data via gps.h and gpspipe</li>
-        <li>Power, HW/FW, motion, temperature, CAN, IIO sensors</li>
-        <li>JSON creation using json-c</li>
-        <li>MQTT communication with AWS IoT</li>
-        <li>Local logging for post-failure analysis</li>
+        <li>Integrated power, HW/FW, motion, temperature, CAN & IIO data</li>
+        <li>Structured data using json-c</li>
+        <li>Published data to AWS IoT using MQTT</li>
+        <li>Implemented local logging for field diagnostics</li>
       </ul>
     </div>
 
-    <div class="tab-content" id="content2">
-      <h3>TPMS Data Processing & Shared Memory</h3>
+    <div class="tab-content" id="c2">
+      <h3>TPMS Sensor & Shared Memory System</h3>
       <ul>
-        <li>Raw TPMS data decoding and validation</li>
-        <li>JSON preparation and storage in shared memory</li>
-        <li>Multi-process access with mutex protection</li>
-        <li>Thread-safe IPC design</li>
+        <li>Decoded and validated raw TPMS sensor data</li>
+        <li>Prepared JSON payloads</li>
+        <li>Stored data in shared memory</li>
+        <li>Used mutex for thread-safe parallel access</li>
       </ul>
     </div>
 
-    <div class="tab-content" id="content3">
+    <div class="tab-content" id="c3">
       <h3>Remote Command & OTA Update System</h3>
       <ul>
         <li>MQTT-based remote communication</li>
         <li>IMEI-based topic subscription</li>
         <li>Remote command execution</li>
-        <li>OS & Application OTA updates</li>
+        <li>OS & application OTA updates</li>
         <li>Fail-safe rollback to previous image</li>
       </ul>
     </div>
 
-    <div class="tab-content" id="content4">
+    <div class="tab-content" id="c4">
       <h3>Qt & Electron Visualization Tools</h3>
       <ul>
-        <li>Qt-based C++ UI for GSM & GNSS visualization</li>
-        <li>Electron dashboard with tab-based views</li>
-        <li>Real-time data monitoring</li>
+        <li>Qt C++ UI for GSM & GNSS data visualization</li>
+        <li>Electron-based dashboard</li>
+        <li>Tab-based monitoring interface</li>
       </ul>
     </div>
 
-    <div class="tab-content" id="content5">
-      <h3>Bare Metal Device Development</h3>
+    <div class="tab-content" id="c5">
+      <h3>Bare Metal Firmware Development</h3>
       <ul>
         <li>Customer-driven firmware development</li>
-        <li>Dual profile / dual operator support</li>
+        <li>Dual operator / dual profile support</li>
         <li>Automatic & forced network switching</li>
-        <li>GEO-fencing with entry/exit alerts</li>
+        <li>GEO-fencing with entry & exit alerts</li>
       </ul>
     </div>
-
   </div>
 </section>
 
+<!-- EDUCATION -->
 <section class="section timeline">
-  <h2>Education & Training</h2>
+  <h2>Education</h2>
+
   <div class="timeline-item">
-    <span>Vector India</span>
-    <p>Advanced Embedded Systems Training – C, C++, Embedded Linux</p>
+    <h4>Bachelor of Engineering (B.E)</h4>
+    <p>Electrical & Electronics Engineering<br>
+       HKBK College of Engineering, Bengaluru</p>
+  </div>
+
+  <div class="timeline-item">
+    <h4>Embedded Systems Training</h4>
+    <p>Vector India – C, C++, Embedded Linux, System Programming</p>
   </div>
 </section>
 
-<section class="section">
-  <h2>Resume</h2>
-  <a class="btn" href="assets/resume.pdf" target="_blank">Download Resume</a>
+<!-- CONTACT -->
+<section class="section contact">
+  <h2>Contact</h2>
+  <p>
+    Interested in Embedded Linux, Middleware, IoT, and Automotive opportunities.
+  </p>
+
+  <div class="contact-links">
+    <a href="mailto:santosh.parmar@gmail.com">📧 santosh.parmar@gmail.com</a>
+    <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank">🔗 LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank">🐙 GitHub</a>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Santosh Parmar | Embedded Middleware Developer</p>
+  © 2026 Santosh Parmmar • Embedded Middleware Developer
 </footer>
 
 </body>
